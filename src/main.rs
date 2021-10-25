@@ -2,7 +2,7 @@ use rand::Rng;
 use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
-#[structopt(name = "example", about = "An example of StructOpt usage.")]
+#[structopt(name = "passphrase-generator", about = "Generate passphrases based on the two EFF short word lists.")]
 struct Opt {
     #[structopt(short, long, default_value = "4")]
     num_words: i32,
